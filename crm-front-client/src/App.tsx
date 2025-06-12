@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Login from './pages/Log-in';
+import Login from './pages/log-in/Log-in';
 
 
 export default function App() {
   return (
     <Router>
-      <div className='flex h-screen'>
+      <div className='flex h-screen max-w-[1360px] mx-auto rounded-xl shadow-lg'>
         
         <nav className="w-[200px] p-4 bg-gray-200 space-x-4 ">
           <Link to="/" className="hover:underline">Главная</Link>

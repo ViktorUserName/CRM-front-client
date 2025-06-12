@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Logo from '../components/logo';
 
 
 export default function Login() {
@@ -18,15 +19,14 @@ export default function Login() {
 
     const data = await response.json();
     console.log(data);
-
-    // можешь здесь обработать токен, переход и т.п.
   };
 
   return (
-    <div className='flex h-screen'>
-        <div className='w-1/2'>111</div>
-        <div className="w-1/2 bg-amber-200 flex flex-col gap-4 p-6 rounded-xl shadow-lg">
-            <p className="text-2xl font-bold">Sign In to Mbanking</p>
+    <div className='flex h-screen max-w-7xl'>
+
+        <Logo/>
+        <div className="w-1/2 bg-amber-200 flex flex-col gap-4 p-6 shadow-lg">
+            {/* <p className="text-2xl font-bold">Sign In to Mbanking</p>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
@@ -55,7 +55,7 @@ export default function Login() {
 
             <a href="#" className="text-sm underline hover:text-blue-500">
                 Don't have an account?
-            </a>
+            </a> */}
         </div>
     </div>
   );
