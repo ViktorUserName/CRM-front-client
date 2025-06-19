@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Logo from '../components/logo';
+import Logo from './components/logo';
 
 
 export default function Login() {
@@ -24,9 +24,10 @@ export default function Login() {
   return (
     <div className='flex h-screen max-w-7xl'>
 
-        <Logo/>
-        <div className="w-1/2 bg-amber-200 flex flex-col gap-4 p-6 shadow-lg">
-            {/* <p className="text-2xl font-bold">Sign In to Mbanking</p>
+      <Logo/>
+      
+      <div className="w-1/2 bg-white flex flex-col gap-4 p-6 rounded-r-2xl">
+        <p className="text-2xl font-bold">Sign In to Mbanking</p>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <input
@@ -55,8 +56,9 @@ export default function Login() {
 
             <a href="#" className="text-sm underline hover:text-blue-500">
                 Don't have an account?
-            </a> */}
-        </div>
+            </a>
+      </div>
+
     </div>
   );
 }

@@ -1,23 +1,23 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './pages/log-in/Log-in';
+import Navbar from './components/navbar';
 
 
 export default function App() {
   return (
     <Router>
-      <div className='flex h-screen max-w-[1360px] mx-auto rounded-xl shadow-lg'>
-        
-        <nav className="w-[200px] p-4 bg-gray-200 space-x-4 ">
-          <Link to="/" className="hover:underline">Главная</Link>
-          <Link to="/log-in" className="hover:underline">Sign in</Link>
-        </nav>
+      <div className='w-full min-h-screen bg-[#F2F2F2] pt-5 pb-5'>
+        <div className='flex h-screen max-w-[1360px] mx-auto gap-5'>
 
-        <main className="flex-1">
-          <Routes>
-            <Route path="/log-in" element={<Login />} />
-          </Routes>
-        </main>
+          <Navbar/>
 
+          <main className="flex-1 ">
+            <Routes>
+              <Route path="/log-in" element={<Login />} />
+            </Routes>
+          </main>
+
+        </div>
       </div>
     </Router>
   );
