@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './pages/log-in/Log-in';
 import Navbar from './components/navbar';
+import RootPage from './pages/root-page/RootPage';
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
 
           <main className="flex-1 ">
             <Routes>
+              <Route path='/' element={<RootPage/>}/>
               <Route path="/log-in" element={<Login />} />
             </Routes>
           </main>
