@@ -45,7 +45,7 @@ export default function Login() {
 
 
   return (
-    <div className='flex h-screen max-w-7xl'>
+    <div className='flex h-[100%] max-w-7xl'>
 
       <Logo />
 
