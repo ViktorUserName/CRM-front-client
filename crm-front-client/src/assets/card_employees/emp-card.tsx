@@ -1,7 +1,7 @@
 import * as React from "react";
 
 
-const Emp_card = (props: React.SVGProps<SVGSVGElement>) => (
+const Emp_card = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="54"
     height="54"
@@ -9,6 +9,7 @@ const Emp_card = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    className={className}
     {...props}
   >
     <circle
